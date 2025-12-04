@@ -2204,3 +2204,8 @@ Before publishing an NTS release, maintainers MAY use the following checklist:
 These practices help ensure that NTS remains a stable, citable, and reproducible specification within the broader Aurora ecosystem.
 
 ---
+
+# End of Normative Specification
+
+The following appendices are non-normative unless explicitly stated.
+
