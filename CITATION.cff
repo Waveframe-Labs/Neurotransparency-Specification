@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Neurotransparency Specification (NTS)"
+version: "1.1.0"
+message: "If you use this specification, please cite it using the metadata below."
+type: standard
+authors:
+  - family-names: "Wright"
+    given-names: "Shawn C."
+    orcid: "https://orcid.org/0009-0006-6043-9295"
+abstract: >
+  The Neurotransparency Specification (NTS) defines the formal normative
+  requirements, schema-level rules, validation constraints, and compliance
+  structures that implement the epistemic principles established in the
+  Neurotransparency Doctrine. It serves as the machine-verifiable standard
+  for cognitive traceability in AI–human scientific workflows.
+license: "CC-BY-4.0"
+repository-code: "https://github.com/Waveframe-Labs/Neurotransparency-Specification"
+keywords:
+  - epistemic standards
+  - governance
+  - AI reproducibility
+  - cognitive traceability
+  - validation schemas
+doi: "TBD"
