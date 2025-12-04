@@ -8,7 +8,7 @@ contact: swright@waveframelabs.org
 license: CC BY 4.0
 related: Neurotransparency Doctrine v1.0.0; AWO v1.2.x; CRI-CORE v0.1+
 orcid: 0009-0006-6043-9295
-doi: (assigned upon publication)
+doi: 10.5281/zenodo.17809676  
 ---
 
 # Neurotransparency Specification (NTS) v1.1.0
