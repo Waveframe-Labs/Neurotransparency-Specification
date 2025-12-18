@@ -1487,7 +1487,87 @@ No informal or silent modification is permitted.
 
 ### 12.2 Semantic Versioning
 
-NTS SHALL follow semantic versioning:
+NTS SHALL follow semantic versioning:  
+```
+MAJOR.MINOR.PATCH
+```
+
+Where:
+
+- **MAJOR** — backward-incompatible changes to disclosure requirements, definitions, or compliance criteria  
+- **MINOR** — backward-compatible additions or clarifications  
+- **PATCH** — corrections that do not alter normative meaning or compliance obligations
+
+Each published version SHALL have a unique version identifier.
+
+---
+
+### 12.3 Immutability of Published Versions
+
+Once a version of NTS is published:
+
+- its content SHALL NOT be modified,
+- its requirements SHALL NOT be retroactively altered,
+- its compliance meaning SHALL remain fixed.
+
+Corrections or changes MUST be issued as a new version.
+
+---
+
+### 12.4 Change Documentation Requirement
+
+Every change to NTS MUST be accompanied by documentation that includes:
+
+- a description of the change,
+- affected sections,
+- the rationale for modification,
+- compatibility implications,
+- and the version increment applied.
+
+Change documentation MUST be preserved alongside the specification.
+
+---
+
+### 12.5 Backward Compatibility
+
+Backward compatibility SHALL be preserved whenever possible.
+
+If a change introduces incompatibility:
+- it MUST be reflected in a MAJOR version increment,
+- migration considerations SHOULD be documented,
+- prior versions remain valid historical references.
+
+Supersession does not imply invalidation.
+
+---
+
+### 12.6 Version Lineage Transparency
+
+All versions of NTS MUST remain accessible.
+
+Version history MUST allow reviewers to:
+- identify which version governed a given artifact,
+- understand changes across versions,
+- reconstruct historical compliance context.
+
+No version MAY be removed or hidden.
+
+---
+
+### 12.7 Change Control Without Enforcement
+
+NTS defines change control requirements normatively.
+
+It does not mandate:
+- specific tooling,
+- review committees,
+- enforcement mechanisms.
+
+Downstream governance systems MAY enforce change control but SHALL NOT redefine it.
+
+---
+
+This section defines how NTS evolves while preserving stability, traceability, and institutional legitimacy.
 
 ## 13. Adoption Statement
 Defines what it means to adopt NTS.
