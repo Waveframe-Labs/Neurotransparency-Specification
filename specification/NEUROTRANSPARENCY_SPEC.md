@@ -1463,7 +1463,31 @@ If NTS attempts to answer questions belonging to other layers, it is misapplied.
 This section defines the interaction boundaries between NTS and downstream Aurora systems.
 
 ## 12. Versioning & Change Control
-Defines how changes to the NTS are governed.
+
+This section defines the authoritative rules governing how the Neurotransparency Specification (NTS) is updated, versioned, and maintained over time.
+
+NTS is a governed normative specification under the Aurora Research Initiative (ARI).  
+Once published, a version of NTS is an immutable epistemic artifact.
+
+---
+
+### 12.1 Governance Authority
+
+NTS is governed by ARI and subject to ARI’s documentation governance policies.
+
+All changes to NTS MUST:
+- be explicitly proposed,
+- be versioned,
+- be documented,
+- and be ratified according to ARI governance procedures.
+
+No informal or silent modification is permitted.
+
+---
+
+### 12.2 Semantic Versioning
+
+NTS SHALL follow semantic versioning:
 
 ## 13. Adoption Statement
 Defines what it means to adopt NTS.
