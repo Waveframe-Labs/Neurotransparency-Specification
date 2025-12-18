@@ -1570,13 +1570,315 @@ Downstream governance systems MAY enforce change control but SHALL NOT redefine 
 This section defines how NTS evolves while preserving stability, traceability, and institutional legitimacy.
 
 ## 13. Adoption Statement
-Defines what it means to adopt NTS.
+
+This section defines what it means for an artifact, project, or workflow to **adopt** the Neurotransparency Specification (NTS).
+
+Adoption establishes a declared commitment to disclosure standards.  
+It does not, by itself, guarantee compliance.
+
+---
+
+### 13.1 Meaning of Adoption
+
+Adoption of NTS means that an artifact, project, or workflow:
+
+- acknowledges NTS as an applicable normative specification,
+- commits to meeting all mandatory NTS requirements when applicable,
+- accepts evaluation of epistemic legitimacy under NTS criteria.
+
+Adoption is a **voluntary declaration**, not an automatic designation.
+
+---
+
+### 13.2 Adoption vs. Compliance
+
+Adoption and compliance are distinct.
+
+- **Adoption** is a stated intent to operate under NTS.
+- **Compliance** is the actual satisfaction of NTS requirements.
+
+An artifact MAY adopt NTS and still be non-compliant.  
+An artifact that does not adopt NTS SHALL NOT claim NTS compliance.
+
+---
+
+### 13.3 Scope of Adoption
+
+Adoption MAY apply to:
+
+- a single artifact,
+- a collection of artifacts,
+- a workflow or project,
+- an organizational policy.
+
+The scope of adoption MUST be clearly stated.
+
+Ambiguous or implied adoption SHALL NOT be treated as valid.
+
+---
+
+### 13.4 Adoption Declaration
+
+An adoption declaration SHOULD specify:
+
+- the version of NTS adopted,
+- the scope of adoption,
+- any exclusions or limitations (if applicable).
+
+Declarations MUST NOT misrepresent the guarantees provided by NTS.
+
+---
+
+### 13.5 No Endorsement or Certification
+
+Adoption of NTS does not imply:
+
+- endorsement by ARI or Waveframe Labs,
+- certification of correctness,
+- approval of conclusions,
+- validation of methodology.
+
+NTS is not a certification regime.
+
+---
+
+### 13.6 Revocation or Change of Adoption
+
+Adoption MAY be revoked or changed prospectively.
+
+Revocation:
+- MUST be explicitly declared,
+- MUST NOT retroactively alter prior disclosures,
+- MUST NOT invalidate historical provenance.
+
+Historical artifacts remain governed by the NTS version in effect at the time of adoption.
+
+---
+
+This section defines the conditions and meaning of adopting the Neurotransparency Specification.
 
 ## 14. Limitations & Explicit Non-Goals
-Prevents overreach and misinterpretation.
+
+This section defines the explicit **limitations** of the Neurotransparency Specification (NTS) and enumerates what NTS is **not intended to do**.
+
+These boundaries are normative.  
+They exist to prevent overreach, misinterpretation, and misuse of NTS.
+
+---
+
+### 14.1 No Evaluation of Correctness
+
+NTS does not evaluate:
+
+- scientific correctness,
+- factual accuracy,
+- methodological rigor,
+- validity of conclusions,
+- quality of reasoning.
+
+An artifact may be NTS-compliant and still be wrong.  
+An artifact may be correct and still be non-compliant.
+
+---
+
+### 14.2 No Enforcement or Execution
+
+NTS does not:
+
+- run workflows,
+- enforce compliance,
+- validate artifacts,
+- block releases,
+- execute audits.
+
+NTS defines **requirements only**.  
+Enforcement is the responsibility of downstream systems.
+
+---
+
+### 14.3 No Workflow Prescription
+
+NTS does not prescribe:
+
+- workflow stages,
+- development methodologies,
+- review processes,
+- tooling choices,
+- sequencing of tasks.
+
+Any workflow may adopt NTS provided disclosure requirements are met.
+
+---
+
+### 14.4 No Chain-of-Thought or Internal Reasoning Disclosure
+
+NTS explicitly does not require:
+
+- chain-of-thought disclosure,
+- raw prompt transcripts,
+- internal model states,
+- hidden reasoning traces,
+- proprietary system internals.
+
+NTS governs epistemic influence, not cognitive surveillance.
+
+---
+
+### 14.5 No Vendor, Model, or Platform Dependency
+
+NTS is:
+
+- model-agnostic,
+- vendor-neutral,
+- platform-independent.
+
+It does not privilege or exclude any AI system, provider, or implementation.
+
+---
+
+### 14.6 No Attribution of Agency to AI
+
+NTS does not recognize AI systems as epistemic agents.
+
+AI systems:
+- do not hold authority,
+- do not own decisions,
+- do not bear responsibility.
+
+Any interpretation implying AI agency is a misuse of this specification.
+
+---
+
+### 14.7 No Retroactive Imposition
+
+NTS does not retroactively invalidate artifacts created prior to adoption.
+
+Legacy artifacts MAY be annotated for transparency but are not automatically non-compliant.
+
+---
+
+### 14.8 No Expansion Beyond Epistemic Transparency
+
+NTS does not regulate:
+
+- ethics,
+- bias,
+- safety,
+- risk management,
+- intellectual property,
+- authorship credit.
+
+Those concerns MAY be governed by other specifications but are outside NTS scope.
+
+---
+
+### 14.9 No Implicit Guarantees
+
+NTS provides no guarantees of:
+
+- reproducibility,
+- robustness,
+- trustworthiness,
+- ethical soundness,
+- correctness.
+
+It guarantees only structured disclosure of epistemic influence.
+
+---
+
+This section defines the explicit boundaries of NTS and prevents misapplication beyond its intended scope.
 
 ## 15. References & Citations
-Authoritative references.
+
+This section lists the **authoritative references** governing, motivating, or directly related to the Neurotransparency Specification (NTS).
+
+All references are normative or contextual anchors.  
+In the event of conflict, ARI-governed specifications take precedence.
+
+---
+
+### 15.1 Normative Governance References
+
+These documents define the institutional and normative authority under which NTS operates.
+
+- **Aurora Research Initiative (ARI) — Architecture & Governance**  
+  Wright, S. C. *Aurora Research Initiative (ARI): Institutional Governance Framework.*  
+  Waveframe Labs.  
+  DOI: https://doi.org/10.5281/zenodo.17743096
+
+- **ARI Metadata Policy v2.0.0**  
+  Wright, S. C. *Metadata Policy — ARI-Metadata-2.0.0.*  
+  Waveframe Labs, 2025.  
+  Governs required metadata for all NTS artifacts.
+
+---
+
+### 15.2 Neurotransparency Doctrine
+
+The Doctrine provides philosophical and epistemic justification but does not define enforceable requirements.
+
+- **Neurotransparency Doctrine (NTD)**  
+  Wright, S. C. *Neurotransparency Doctrine.*  
+  Waveframe Labs.  
+  DOI: https://doi.org/10.5281/zenodo.17809676
+
+---
+
+### 15.3 Workflow & Enforcement Specifications
+
+These specifications define when and how NTS requirements may be operationalized.
+
+- **Aurora Workflow Orchestration (AWO)**  
+  Wright, S. C. *Aurora Workflow Orchestration: Methodology for Governed AI–Human Research.*  
+  Waveframe Labs.  
+  DOI: https://doi.org/10.5281/zenodo.17013612
+
+- **CRI-CORE (Continuous Research Integration — Core)**  
+  Wright, S. C. *CRI-CORE: Deterministic Enforcement of Governed Research Artifacts.*  
+  Waveframe Labs.  
+  (In development)
+
+---
+
+### 15.4 External Normative References
+
+The following external standards inform terminology and compliance language:
+
+- **RFC 2119** — *Key words for use in RFCs to Indicate Requirement Levels*  
+  Bradner, S. (1997). IETF.
+
+- **RFC 8174** — *Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words*  
+  Leiba, B. (2017). IETF.
+
+---
+
+### 15.5 Citation Block (Human-Readable)
+
+**Wright, Shawn C.**  
+*Neurotransparency Specification (NTS) v2.0.0.*  
+Waveframe Labs, Aurora Research Initiative.  
+2025.  
+License: CC BY 4.0.
+
+---
+
+### 15.6 BibTeX Citation
+
+```bibtex
+@misc{wright_nts_2025,
+  author       = {Wright, Shawn C.},
+  title        = {Neurotransparency Specification (NTS)},
+  version      = {2.0.0},
+  year         = {2025},
+  publisher    = {Waveframe Labs},
+  institution  = {Aurora Research Initiative},
+  license      = {CC BY 4.0},
+  note         = {Normative compliance specification for AI--human epistemic transparency}
+}
+```
+This section defines the authoritative references and citation formats for the Neurotransparency Specification.  
+
+---  
 
 ## Citation
 
@@ -1601,3 +1903,7 @@ DOI: TBD
   doi          = {TBD}
 }
 ```
+<div align="center">
+  <sub>© 2025 Waveframe Labs — Independent Open-Science Research Entity • Governed under the Aurora Research Initiative (ARI)</sub>
+</div>  
+
