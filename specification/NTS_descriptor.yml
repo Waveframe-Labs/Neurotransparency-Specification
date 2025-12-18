@@ -1,0 +1,20 @@
+---
+title: "Neurotransparency Specification (NTS) — Canonical Specification Directory"
+version: "2.0.0"
+status: "Active"
+created: "2025-12-18"
+updated: "2025-12-18"
+type: "directory"
+author: "Waveframe Labs"
+maintainer: "Waveframe Labs"
+license: "Apache-2.0"
+policy_version: "ARI-Metadata-2.0.0"
+ai_assisted: "partial"
+ai_assistance_details: "AI-assisted structural drafting and compliance verification under full human oversight and final approval."
+purpose: "Holds the canonical normative specification files defining disclosure requirements for epistemically relevant AI influence under the Neurotransparency framework."
+anchors:
+  - "NTS-SPEC-DIR-v2.0.0"
+dependencies:
+  - "Neurotransparency Doctrine v2.0.0"
+  - "Aurora Research Initiative (ARI)"
+---
