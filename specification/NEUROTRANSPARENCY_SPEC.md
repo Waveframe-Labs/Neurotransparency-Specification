@@ -11,7 +11,7 @@ author: "Waveframe Labs"
 maintainer: "Waveframe Labs"
 contact: "swright@waveframelabs.org"
 license: "CC-BY-4.0"
-doi: "TBD"
+doi: "10.5281/zenodo.17982172"
 orcid: "0009-0006-6043-9295"
 related:
   - "Neurotransparency Doctrine (NTD)"
@@ -1887,7 +1887,7 @@ Wright, Shawn C. (2025).
 **Neurotransparency Specification (NTS): Normative Disclosure Requirements for Cognitive Influence in AI–Human Systems.**  
 Waveframe Labs · Governed under the Aurora Research Initiative (ARI).  
 Version 2.0.0.  
-DOI: TBD
+DOI: 10.5281/zenodo.17982172
 
 ### BibTeX
 ```bibtex
@@ -1900,7 +1900,7 @@ DOI: TBD
   publisher    = {Aurora Research Initiative (ARI)},
   orcid        = {0009-0006-6043-9295},
   license      = {CC-BY-4.0},
-  doi          = {TBD}
+  doi          = {10.5281/zenodo.17982172}
 }
 ```
 <div align="center">
