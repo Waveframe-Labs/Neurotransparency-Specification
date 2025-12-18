@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 title: "Neurotransparency Specification (NTS)"
-version: "2.0.0"
+version: "2.0.0"  
+url: "https://waveframelabs.org"  
 message: "If you use this specification, please cite it using the metadata below."
 type: specification  
 authors:
