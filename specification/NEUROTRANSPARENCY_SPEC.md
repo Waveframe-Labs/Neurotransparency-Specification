@@ -121,10 +121,239 @@ An artifact may be scientifically correct and still be non-compliant with NTS.
 Conversely, NTS compliance does not imply correctness — only that the influence of AI-assisted cognition is transparently disclosed and attributable.
 
 ## 1. Scope of the Specification
-Defines what NTS governs and explicitly excludes.
+
+This section defines the **normative scope** of the Neurotransparency Specification (NTS): what it governs, what it applies to, and what it explicitly excludes.
+
+NTS applies only to **epistemically relevant cognition** — human or synthetic — that materially influences a claim, conclusion, decision, or published artifact.
+
+---
+
+### 1.1 What NTS Governs
+
+NTS governs **disclosure requirements** for cognition that affects epistemic outcomes.
+
+Specifically, NTS applies to:
+
+- scientific, technical, analytical, or policy claims,
+- research artifacts, reports, specifications, and governance documents,
+- AI–human collaborative workflows where AI output influences outcomes,
+- automated or semi-automated reasoning pipelines that affect conclusions,
+- derivative artifacts whose content depends on prior AI-influenced cognition.
+
+If a cognitive process influences **what is asserted**, **what is concluded**, or **what is decided**, that process is within scope.
+
+NTS is agnostic to:
+- domain (science, engineering, governance, policy),
+- toolchain,
+- model architecture,
+- institutional affiliation.
+
+---
+
+### 1.2 Epistemic Influence Threshold
+
+NTS applies only when a cognitive contribution crosses the **epistemic influence threshold**.
+
+A contribution is considered *in scope* if it:
+
+- introduces novel content,
+- alters interpretation, framing, or weighting of evidence,
+- affects selection among alternatives,
+- shapes conclusions, claims, or decisions,
+- meaningfully constrains downstream reasoning.
+
+Purely mechanical or clerical operations do **not** cross this threshold.
+
+---
+
+### 1.3 What NTS Explicitly Excludes
+
+NTS does **not** govern:
+
+- internal cognition of humans or models that does not influence outputs,
+- private brainstorming, exploration, or discarded drafts,
+- spelling, grammar, formatting, or stylistic edits,
+- compilation, rendering, or file conversion steps,
+- deterministic execution of already-approved logic,
+- model internals, hidden states, or proprietary reasoning traces,
+- prompt content unless explicitly designated as epistemically relevant.
+
+NTS does **not** require:
+- disclosure of chain-of-thought,
+- access to internal model reasoning,
+- exposure of proprietary systems,
+- surveillance of human cognition.
+
+If a process does not alter epistemic justification, it is out of scope.
+
+---
+
+### 1.4 Artifact-Level Scope
+
+NTS applies at the **artifact level**, not the repository or individual level.
+
+An artifact is within scope if:
+
+- it asserts claims,
+- it depends on AI-influenced reasoning,
+- it is published, shared, or treated as authoritative.
+
+An artifact may be:
+- compliant,
+- non-compliant,
+- or out of scope.
+
+NTS makes no assumptions about the intent, competence, or credibility of the author.
+
+---
+
+### 1.5 Temporal Scope
+
+NTS applies to:
+
+- cognition performed during the creation of an artifact,
+- cognition incorporated from prior artifacts,
+- cognition reused or referenced from earlier workflows.
+
+Legacy artifacts MAY be retroactively annotated for compliance but are not automatically invalidated by lack of prior disclosure unless explicitly governed.
+
+---
+
+### 1.6 Boundary Condition
+
+The scope of NTS is intentionally minimal.
+
+NTS governs **disclosure of epistemic influence**, nothing more.
+
+If a requirement cannot be expressed as a disclosure obligation, it does not belong in this specification.
+
+---
+
+This section establishes the enforceable boundaries of NTS applicability.
 
 ## 2. Normative Compliance Model
-Defines what it means to be NTS-compliant.
+
+This section defines what it means for an artifact, workflow, or release to be **Neurotransparency-compliant** under NTS.
+
+NTS defines **minimum normative compliance**, not best practices, not maximal disclosure, and not correctness of results.
+
+---
+
+### 2.1 Definition of NTS Compliance
+
+An artifact is **NTS-compliant** if and only if:
+
+- all required NTS disclosure fields are present,
+- all epistemically relevant AI influence is explicitly declared,
+- attribution of cognitive roles is unambiguous,
+- human decision ownership is clearly identified,
+- required disclosures are sufficient to permit reconstruction **in principle** of how AI influenced the outcome.
+
+Compliance is binary.
+
+An artifact is either compliant or non-compliant under this specification.
+
+---
+
+### 2.2 Minimum Disclosure Standard
+
+NTS establishes a **minimum disclosure floor**, not a ceiling.
+
+An artifact MAY disclose more than required by NTS, but MUST NOT disclose less.
+
+Compliance requires that no epistemically relevant AI influence is:
+- hidden,
+- implied without declaration,
+- retroactively rationalized,
+- or attributed to “the model” as an autonomous agent.
+
+---
+
+### 2.3 Artifact-Level Compliance
+
+NTS compliance is evaluated at the **artifact level**.
+
+Each artifact is independently assessed based on:
+- its own disclosures,
+- its declared dependencies,
+- and the epistemic influence embedded in its content.
+
+A compliant artifact MAY depend on:
+- other compliant artifacts,
+- non-AI artifacts,
+- or legacy artifacts with explicit disclosure.
+
+A non-compliant artifact SHALL NOT be treated as epistemically legitimate under NTS-aligned systems.
+
+---
+
+### 2.4 Human Epistemic Authority Invariant
+
+NTS enforces a non-negotiable invariant:
+
+**AI systems do not make epistemic decisions. Humans do.**
+
+Therefore:
+- AI outputs are advisory by default,
+- acceptance, rejection, or weighting of AI input is always a human action,
+- responsibility for claims rests with an identifiable human decision owner.
+
+Any artifact that attributes decisions, conclusions, or authority to an AI system is **non-compliant**.
+
+---
+
+### 2.5 Reconstruction Principle
+
+NTS compliance requires **reconstructibility in principle**, not full replay.
+
+A compliant artifact MUST provide enough structured disclosure to allow a competent reviewer to understand:
+
+- what kind of AI cognition occurred,
+- where it influenced the artifact,
+- how it was used,
+- and who accepted responsibility for its use.
+
+NTS does not require:
+- access to proprietary systems,
+- disclosure of internal model reasoning,
+- exact prompt transcripts.
+
+If epistemic influence cannot be reconstructed even conceptually, the artifact is non-compliant.
+
+---
+
+### 2.6 Non-Judgment Clause
+
+NTS does not evaluate:
+
+- scientific correctness,
+- methodological rigor,
+- quality of reasoning,
+- validity of conclusions,
+- ethical desirability.
+
+NTS evaluates **legitimacy of epistemic disclosure only**.
+
+A compliant artifact may still be wrong.
+A correct artifact may still be non-compliant.
+
+---
+
+### 2.7 Failure Conditions
+
+An artifact SHALL be considered **non-compliant** if:
+
+- AI materially influenced reasoning and was undeclared,
+- decision ownership is ambiguous or missing,
+- AI is treated as an epistemic authority,
+- required disclosures are absent or misleading,
+- AI influence cannot be reconstructed in principle.
+
+Non-compliance invalidates epistemic legitimacy under NTS-aligned review, tooling, and governance systems.
+
+---
+
+This section defines the normative conditions under which an artifact may be considered Neurotransparency-compliant.
 
 ## 3. Definitions & Terminology
 Locks vocabulary used throughout the specification.
@@ -165,7 +394,7 @@ Prevents overreach and misinterpretation.
 ## 15. References & Citations
 Authoritative references.
 
-## Recommended Citation
+## Citation
 
 ### Human-Readable
 Wright, Shawn C. (2025).  
