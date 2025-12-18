@@ -880,19 +880,587 @@ Downstream systems MAY enforce these requirements but MUST NOT reinterpret them.
 This section defines how cognition must be attributed and separated to preserve epistemic accountability under NTS.
 
 ## 7. Provenance & Integrity Requirements
-Defines requirements for preserving cognitive lineage.
+
+This section defines the mandatory requirements for preserving the **provenance**, **continuity**, and **integrity** of epistemically relevant cognition disclosed under NTS.
+
+Provenance exists to ensure that disclosed AI influence is not merely stated, but **anchored, traceable, and resistant to retroactive distortion**.
+
+---
+
+### 7.1 Provenance Requirement
+
+All disclosed AI-influenced cognition MUST be anchored to identifiable provenance.
+
+Provenance MUST make it possible to determine, in principle:
+
+- where AI influence occurred,
+- how it entered the artifact,
+- what it depended upon,
+- and how it propagated to downstream claims.
+
+Undeclared or untraceable influence constitutes non-compliance.
+
+---
+
+### 7.2 Provenance Anchors
+
+Provenance MAY be established through one or more of the following anchors:
+
+- references to specific artifact sections,
+- linkage to workflow stages or decision points,
+- identifiers for AI-assisted interactions,
+- references to prior governed artifacts,
+- structured disclosure blocks.
+
+Anchors MUST be stable within the context of the artifact and sufficient for third-party interpretation.
+
+---
+
+### 7.3 Integrity of Disclosures
+
+Disclosures MUST preserve internal consistency and integrity.
+
+Specifically:
+- disclosures SHALL NOT contradict the artifact’s content,
+- disclosures SHALL NOT minimize or exaggerate AI influence,
+- disclosures SHALL remain valid across revisions unless explicitly superseded.
+
+Misleading or internally inconsistent disclosures SHALL be treated as non-compliance.
+
+---
+
+### 7.4 Change Integrity
+
+When an artifact is revised:
+
+- prior disclosures MUST remain visible, or
+- changes to AI influence MUST be explicitly disclosed.
+
+Silent alteration of epistemically relevant influence across versions is prohibited.
+
+Revisions MUST NOT erase historical provenance.
+
+---
+
+### 7.5 Dependency Integrity
+
+If an artifact depends on prior artifacts or workflows that involved AI influence:
+
+- that dependency MUST be disclosed,
+- provenance MAY be inherited by reference,
+- responsibility for correct attribution remains with the current artifact’s decision owner.
+
+Inherited provenance SHALL NOT be treated as implicit or assumed.
+
+---
+
+### 7.6 Non-Repudiation Principle
+
+Once disclosed, epistemic influence SHALL NOT be retroactively denied.
+
+Artifacts MUST NOT:
+- remove AI influence declarations without justification,
+- reframe prior AI influence as negligible without explanation,
+- attribute earlier cognition to different agents post hoc.
+
+Provenance is a historical record, not a narrative convenience.
+
+---
+
+### 7.7 Integrity Without Mechanism
+
+NTS defines integrity requirements without mandating specific mechanisms.
+
+NTS does not require:
+- cryptographic hashes,
+- ledgers,
+- version control systems,
+- or enforcement tooling.
+
+However, any mechanism used MUST preserve:
+- traceability,
+- immutability in context,
+- and resistance to silent modification.
+
+---
+
+### 7.8 Provenance Sufficiency Standard
+
+Provenance SHALL be considered sufficient if an independent reviewer can:
+
+- trace disclosed AI influence to specific parts of the artifact,
+- understand how that influence affected claims,
+- and detect meaningful changes across versions.
+
+If provenance cannot support this understanding, it is insufficient.
+
+---
+
+This section defines the normative requirements for preserving cognitive lineage and disclosure integrity under NTS.
 
 ## 8. Reconstruction & Re-evaluation Requirements
-Defines reconstructibility standards for third-party review.
 
+This section defines the standards for **reconstructibility** and **re-evaluation** of AI-influenced cognition disclosed under NTS.
+
+Reconstruction exists to enable independent understanding of epistemic influence without requiring access to internal model reasoning, proprietary systems, or real-time cognition.
+
+---
+
+### 8.1 Reconstruction Principle
+
+A NTS-compliant artifact MUST support **reconstruction in principle**.
+
+Reconstruction means that an independent, competent reviewer can determine:
+
+- what kind of AI cognition occurred,
+- where it influenced the artifact,
+- how that influence shaped reasoning or decisions,
+- and who accepted responsibility for its use.
+
+Reconstruction does not require computational replay or exact duplication of AI outputs.
+
+---
+
+### 8.2 Scope of Reconstruction
+
+Reconstruction SHALL be conceptual and procedural, not mechanical.
+
+Specifically, reconstruction MAY rely on:
+- structured disclosures,
+- provenance anchors,
+- decision attribution,
+- role separation declarations,
+- version history and change notes.
+
+Reconstruction SHALL NOT require:
+- access to internal model states,
+- disclosure of chain-of-thought,
+- proprietary prompt content,
+- access to vendor-specific infrastructure.
+
+---
+
+### 8.3 Re-evaluation Capability
+
+A compliant artifact MUST permit **re-evaluation** of its epistemic foundations.
+
+Re-evaluation includes the ability to:
+- question the appropriateness of AI involvement,
+- assess proportionality of AI influence,
+- reconsider decisions in light of alternative assumptions,
+- evaluate whether AI influence was properly constrained.
+
+NTS does not require re-running AI systems to enable re-evaluation.
+
+---
+
+### 8.4 Independence of Review
+
+Reconstruction and re-evaluation MUST be possible without reliance on the original author’s private explanations.
+
+All required information MUST be present within:
+- the artifact itself, or
+- its explicitly referenced dependencies.
+
+If reconstruction depends on undocumented author intent, the artifact is non-compliant.
+
+---
+
+### 8.5 Partial Reconstruction and Limits
+
+NTS permits partial reconstruction where full reconstruction is impossible due to:
+
+- proprietary constraints,
+- unavailable model versions,
+- irreproducible stochastic processes.
+
+However, partial reconstruction MUST still allow reviewers to:
+- understand the nature of AI influence,
+- evaluate decision ownership,
+- assess epistemic legitimacy.
+
+Failure to meet this minimum constitutes non-compliance.
+
+---
+
+### 8.6 Re-evaluation Across Versions
+
+When artifacts are revised, reconstruction MUST remain possible across versions.
+
+Changes that affect:
+- AI involvement,
+- epistemic weight,
+- decision attribution,
+
+MUST be disclosed in a manner that preserves historical understanding.
+
+Re-evaluation SHALL NOT require access to superseded drafts unless explicitly referenced.
+
+---
+
+### 8.7 Reconstruction Without Enforcement
+
+NTS defines reconstructibility as a normative requirement.
+
+It does not prescribe:
+- auditing procedures,
+- review bodies,
+- tooling implementations.
+
+Downstream systems MAY enforce reconstruction requirements but SHALL NOT redefine them.
+
+---
+
+This section defines the standards by which AI-influenced cognition must remain understandable, reviewable, and contestable under NTS.
 ## 9. Independence & Validation Constraints
-Defines separation between cognition, execution, and validation.
+
+This section defines the mandatory constraints governing **independence**, **validation**, and **non-circularity** of epistemic processes under the Neurotransparency Specification (NTS).
+
+These constraints exist to ensure that AI-influenced cognition is not self-justifying, self-validating, or insulated from human accountability.
+
+---
+
+### 9.1 Independence Principle
+
+NTS enforces the following principle:
+
+**Cognition, decision acceptance, and validation must be epistemically separable.**
+
+No single agent—human or synthetic—may:
+- generate epistemically relevant content,
+- accept that content as authoritative,
+- and validate its legitimacy
+without clear separation and disclosure.
+
+---
+
+### 9.2 Validation Requirement
+
+When validation or approval occurs, it MUST be:
+
+- explicitly disclosed,
+- attributed to a human role distinct from content generation,
+- temporally and logically downstream of the cognition being validated.
+
+Implicit or assumed validation is not permitted.
+
+---
+
+### 9.3 Prohibition of Self-Validation
+
+The following practices SHALL be treated as non-compliance:
+
+- AI systems validating their own outputs,
+- humans validating AI outputs they did not meaningfully review,
+- automated approval pipelines without disclosed human oversight,
+- circular validation chains (e.g., A validates B, B validates A).
+
+Validation MUST introduce independent epistemic scrutiny.
+
+---
+
+### 9.4 Separation of Epistemic Functions
+
+Artifacts MUST make clear distinctions between:
+
+- cognition generation,
+- decision acceptance,
+- and validation or approval.
+
+These functions MAY be performed by the same human across time, but MUST NOT be collapsed into a single undisclosed act.
+
+Temporal separation MAY substitute for role separation only if explicitly disclosed.
+
+---
+
+### 9.5 Validation Scope Limitation
+
+Validation under NTS concerns **epistemic legitimacy**, not correctness.
+
+Validation MAY assess:
+- whether disclosure is complete,
+- whether AI influence was appropriate,
+- whether decision ownership is clear.
+
+Validation SHALL NOT be interpreted as:
+- proof of correctness,
+- endorsement of conclusions,
+- certification of quality.
+
+---
+
+### 9.6 Independence Without Enforcement
+
+NTS defines independence and validation constraints normatively.
+
+It does not mandate:
+- specific validators,
+- institutional review bodies,
+- tooling or workflow design.
+
+Downstream systems MAY enforce these constraints but MUST NOT reinterpret their meaning.
+
+---
+
+### 9.7 Independence Sufficiency Standard
+
+Independence SHALL be considered sufficient if an independent reviewer can determine:
+
+- who generated AI-influenced cognition,
+- who accepted it,
+- who validated its legitimacy,
+- and that no circular or self-validating paths exist.
+
+If these determinations cannot be made, the artifact is non-compliant.
+
+---
+
+This section defines the constraints required to prevent epistemic circularity and preserve legitimacy under NTS.
 
 ## 10. Non-Compliance Conditions
-Defines conditions under which an artifact is not NTS-compliant.
+
+This section defines the conditions under which an artifact SHALL be considered **non-compliant** with the Neurotransparency Specification (NTS).
+
+Non-compliance concerns **epistemic legitimacy**, not intent, effort, or correctness.  
+An artifact may be non-compliant even if it is scientifically accurate.
+
+---
+
+### 10.1 General Non-Compliance Rule
+
+An artifact is non-compliant if **any mandatory requirement** defined in this specification is violated.
+
+Non-compliance is binary:
+- an artifact is compliant, or
+- an artifact is non-compliant.
+
+Partial compliance is not recognized under NTS.
+
+---
+
+### 10.2 Undeclared AI Influence
+
+An artifact SHALL be considered non-compliant if:
+
+- AI materially influenced cognition and was not disclosed,
+- AI influence is implied but not explicitly declared,
+- AI-assisted reasoning is reframed as purely human post hoc,
+- AI influence is minimized, obscured, or euphemized.
+
+Undeclared epistemic influence invalidates legitimacy.
+
+---
+
+### 10.3 Threshold Evasion
+
+An artifact is non-compliant if it:
+
+- incorrectly classifies epistemically relevant cognition as out of scope,
+- fragments reasoning to avoid crossing the cognitive influence threshold,
+- relies on AI influence while claiming clerical or cosmetic use.
+
+Intentional or unintentional threshold evasion constitutes non-compliance.
+
+---
+
+### 10.4 Attribution Failures
+
+An artifact SHALL be considered non-compliant if:
+
+- no human decision owner is identifiable,
+- AI systems are attributed epistemic authority,
+- cognitive roles are ambiguous, conflated, or omitted,
+- attribution is inferred rather than declared.
+
+Epistemic responsibility MUST be traceable.
+
+---
+
+### 10.5 Disclosure Deficiencies
+
+Non-compliance occurs when disclosures are:
+
+- incomplete,
+- misleading,
+- internally inconsistent,
+- insufficient for reconstruction in principle.
+
+Disclosure that technically exists but fails to convey epistemic influence is non-compliant.
+
+---
+
+### 10.6 Provenance and Integrity Violations
+
+An artifact is non-compliant if:
+
+- AI influence cannot be traced to specific artifact components,
+- provenance changes are made silently across versions,
+- prior disclosures are removed or contradicted without explanation,
+- dependency on AI-influenced artifacts is undisclosed.
+
+Loss of provenance invalidates trust.
+
+---
+
+### 10.7 Reconstruction Failure
+
+An artifact SHALL be considered non-compliant if:
+
+- epistemic influence cannot be reconstructed conceptually,
+- re-evaluation requires undocumented author intent,
+- understanding AI influence depends on private explanation.
+
+Reconstruction failure invalidates legitimacy.
+
+---
+
+### 10.8 Independence and Validation Violations
+
+An artifact is non-compliant if:
+
+- AI outputs validate or justify themselves,
+- validation is automated without human oversight,
+- validation roles are circular or undisclosed,
+- cognition, decision, and validation are collapsed into a single opaque act.
+
+Validation must introduce independence.
+
+---
+
+### 10.9 Misrepresentation and Overreach
+
+An artifact SHALL be considered non-compliant if it:
+
+- claims NTS compliance without meeting requirements,
+- misrepresents the scope or guarantees of NTS,
+- implies endorsement, correctness, or certification by NTS.
+
+NTS compliance SHALL NOT be used as a quality claim.
+
+---
+
+### 10.10 Effect of Non-Compliance
+
+A non-compliant artifact:
+
+- MUST NOT be treated as epistemically legitimate under NTS-aligned systems,
+- MAY be reviewed, critiqued, or rejected on compliance grounds,
+- MAY be remediated through revision and corrected disclosure.
+
+Non-compliance does not imply misconduct, but it does invalidate legitimacy.
+
+---
+
+This section defines the explicit failure conditions for NTS compliance.
 
 ## 11. Relationship to Downstream Systems
-Clarifies interaction with ARI, AWO, and CRI-CORE.
+
+This section clarifies how the Neurotransparency Specification (NTS) interacts with other components of the Aurora stack.  
+NTS defines **normative disclosure requirements** only and does not execute, enforce, or operationalize workflows.
+
+---
+
+### 11.1 Relationship to ARI (Aurora Research Initiative)
+
+NTS operates **under the authority of ARI**.
+
+ARI defines:
+- institutional legitimacy,
+- governance authority,
+- ratification and change control.
+
+NTS:
+- implements ARI’s epistemic principles at the disclosure level,
+- does not define governance structures,
+- does not adjudicate disputes or correctness.
+
+If a conflict arises, ARI governance is authoritative.
+
+---
+
+### 11.2 Relationship to NTD (Neurotransparency Doctrine)
+
+NTD defines **why** epistemic transparency matters.
+
+NTS defines **what** must be disclosed.
+
+Specifically:
+- NTD provides philosophical and normative justification,
+- NTS provides enforceable disclosure requirements.
+
+NTD SHALL NOT be used to interpret, weaken, or expand NTS requirements.  
+NTS SHALL NOT restate or compete with doctrinal content.
+
+---
+
+### 11.3 Relationship to AWO (Aurora Workflow Orchestration)
+
+AWO defines **when** artifacts are produced in a workflow.
+
+NTS does not:
+- define workflow stages,
+- mandate timing of disclosures,
+- prescribe procedural steps.
+
+AWO MAY:
+- require NTS disclosures at specific stages,
+- reference NTS sections as compliance gates,
+- generate artifacts that satisfy NTS requirements.
+
+NTS remains tooling- and workflow-agnostic.
+
+---
+
+### 11.4 Relationship to CRI-CORE
+
+CRI-CORE defines **whether** required artifacts exist and are valid.
+
+NTS does not:
+- perform validation,
+- run tests,
+- enforce compliance.
+
+CRI-CORE MAY:
+- validate presence and completeness of NTS disclosures,
+- flag non-compliance conditions defined in Section 10,
+- block releases that fail NTS requirements.
+
+CRI-CORE SHALL NOT reinterpret NTS semantics.
+
+---
+
+### 11.5 Non-Substitution Principle
+
+NTS SHALL NOT be substituted for:
+- peer review,
+- methodological validation,
+- ethical review,
+- correctness checks.
+
+Compliance with NTS does not imply:
+- scientific validity,
+- accuracy,
+- endorsement.
+
+It implies only disclosure legitimacy.
+
+---
+
+### 11.6 Stack Separation Invariant
+
+Each layer of the Aurora stack answers a distinct question:
+
+- **ARI** — Who has authority  
+- **NTD** — Why transparency matters  
+- **NTS** — What must be disclosed  
+- **AWO** — When disclosures are produced  
+- **CRI-CORE** — Whether requirements are met  
+
+If NTS attempts to answer questions belonging to other layers, it is misapplied.
+
+---
+
+This section defines the interaction boundaries between NTS and downstream Aurora systems.
 
 ## 12. Versioning & Change Control
 Defines how changes to the NTS are governed.
