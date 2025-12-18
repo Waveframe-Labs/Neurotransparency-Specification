@@ -1,3 +1,20 @@
+---
+title: "Neurotransparency Specification (NTS) — Repository Overview"
+filetype: "documentation"
+type: "documentation"
+version: "2.0.0"
+status: "Active"
+created: "2025-12-03"
+updated: "2025-12-18"
+author: "Waveframe Labs"
+maintainer: "Waveframe Labs"
+contact: "swright@waveframelabs.org"
+license: "CC-BY-4.0"
+ai_assisted: "partial"
+ai_assistance_details: "AI-assisted drafting and structural refinement with full human review and final approval."
+doi: "10.5281/zenodo.17809676"
+---  
+
 <p align="center">
   <img src="figures/nts_banner.png" alt="NTS Banner" width="100%">
 </p>
