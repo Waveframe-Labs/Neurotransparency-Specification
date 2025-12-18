@@ -12,6 +12,7 @@ maintainer: "Waveframe Labs"
 contact: "swright@waveframelabs.org"
 license: "CC-BY-4.0"
 doi: "10.5281/zenodo.17982172"
+concept_doi: "10.5281/zenodo.17809676"  
 orcid: "0009-0006-6043-9295"
 related:
   - "Neurotransparency Doctrine (NTD)"
