@@ -356,16 +356,528 @@ Non-compliance invalidates epistemic legitimacy under NTS-aligned review, toolin
 This section defines the normative conditions under which an artifact may be considered Neurotransparency-compliant.
 
 ## 3. Definitions & Terminology
-Locks vocabulary used throughout the specification.
+
+This section defines the **normative vocabulary** used throughout the Neurotransparency Specification (NTS).  
+All terms defined here are authoritative for this document and SHALL be interpreted consistently wherever they appear.
+
+Terms are included **only** where they are required for enforcement, review, or unambiguous interpretation.  
+Undefined terms SHALL be interpreted according to their plain meaning in technical and scientific usage.
+
+---
+
+### 3.1 Artifact
+
+An **artifact** is any produced object whose content may carry epistemic weight, including but not limited to:
+
+- research papers and reports  
+- technical specifications  
+- analyses, models, simulations, or datasets  
+- governance documents  
+- derived outputs (e.g., summaries, conclusions, recommendations)
+
+An artifact is considered **epistemically relevant** if it asserts, supports, or depends upon a claim.
+
+---
+
+### 3.2 Claim
+
+A **claim** is any assertion, conclusion, decision, or statement presented as true, probable, justified, or authoritative.
+
+Claims may be:
+- scientific  
+- technical  
+- analytical  
+- normative  
+- policy-relevant  
+
+If an artifact contains claims, it is subject to NTS evaluation.
+
+---
+
+### 3.3 Cognition
+
+**Cognition** refers to any process that transforms information in a way that may affect epistemic outcomes.
+
+Cognition includes, but is not limited to:
+- reasoning  
+- inference  
+- synthesis  
+- evaluation  
+- interpretation  
+- selection among alternatives  
+
+Cognition may be performed by humans, AI systems, or hybrid workflows.
+
+---
+
+### 3.4 Cognitive Influence
+
+**Cognitive influence** exists when a cognitive process materially affects:
+
+- the content of an artifact,  
+- the structure of reasoning,  
+- the selection or weighting of evidence,  
+- the formulation, acceptance, or rejection of claims.
+
+Cognitive influence is evaluated by effect, not intent.
+
+---
+
+### 3.5 Cognitive Influence Threshold
+
+The **cognitive influence threshold** is the point at which cognition becomes epistemically relevant and triggers NTS disclosure obligations.
+
+The threshold is crossed when cognition:
+- introduces novel content,  
+- alters justification structure, or  
+- constrains downstream reasoning or decisions.
+
+Purely mechanical or cosmetic transformations do not cross this threshold.
+
+---
+
+### 3.6 AI System
+
+An **AI system** is any computational system that produces outputs via learned, probabilistic, heuristic, or non-deterministic processes, including but not limited to:
+
+- large language models  
+- generative models  
+- decision-support systems  
+- automated analysis tools  
+
+Tool classification is functional, not vendor-based.
+
+---
+
+### 3.7 AI Influence
+
+**AI influence** refers to cognitive influence originating from an AI system that contributes to epistemically relevant outcomes.
+
+AI influence MAY be:
+- editorial  
+- analytical  
+- generative  
+- comparative  
+- decision-informing  
+
+AI influence does not constitute decision authority.
+
+---
+
+### 3.8 Human Decision Owner
+
+The **human decision owner** is the identifiable human agent who:
+
+- evaluates AI output,  
+- accepts, rejects, or modifies it, and  
+- assumes epistemic responsibility for resulting claims.
+
+All claims governed by NTS MUST have an identifiable human decision owner.
+
+---
+
+### 3.9 Disclosure
+
+**Disclosure** is the structured declaration of epistemically relevant AI influence as required by this specification.
+
+Disclosure MUST be:
+- explicit,  
+- attributable,  
+- sufficient for reconstruction in principle.
+
+Disclosure does not require exposure of proprietary or internal reasoning.
+
+---
+
+### 3.10 Reconstruction
+
+**Reconstruction** is the ability for an independent reviewer to understand, after the fact:
+
+- what kind of cognition occurred,  
+- where AI influenced outcomes,  
+- how that influence was incorporated,  
+- and who assumed responsibility.
+
+Reconstruction is conceptual and procedural, not computational replay.
+
+---
+
+### 3.11 Compliance
+
+**Compliance** refers to satisfaction of all mandatory NTS requirements applicable to an artifact.
+
+Compliance is evaluated independently of correctness, quality, or merit.
+
+---
+
+### 3.12 Non-Compliance
+
+**Non-compliance** is the failure to meet one or more mandatory requirements of NTS.
+
+A non-compliant artifact SHALL NOT be considered epistemically legitimate within NTS-aligned systems.
+
+---
+
+This section locks the vocabulary used throughout NTS and SHALL govern interpretation of all subsequent requirements.
 
 ## 4. Cognitive Influence Threshold
-Defines when cognition triggers disclosure obligations.
 
+This section defines the conditions under which cognition becomes **epistemically relevant** and therefore triggers mandatory disclosure obligations under the Neurotransparency Specification (NTS).
+
+NTS does not require disclosure of all cognition.  
+It requires disclosure only when cognition materially influences epistemic outcomes.
+
+---
+
+### 4.1 Threshold Principle
+
+A cognitive process crosses the **cognitive influence threshold** if and only if it has a material effect on:
+
+- the content of an artifact,
+- the structure of reasoning,
+- the interpretation or weighting of evidence,
+- the selection among competing alternatives,
+- or the formulation, acceptance, or rejection of a claim.
+
+Threshold evaluation is outcome-based, not intent-based.
+
+---
+
+### 4.2 In-Scope Cognitive Influence
+
+The following categories of cognition SHALL be considered to cross the cognitive influence threshold:
+
+- generation of novel claims, hypotheses, or explanations,
+- synthesis or abstraction that alters meaning or emphasis,
+- analytical reasoning contributing to conclusions,
+- comparative evaluation of alternatives where selection impacts outcomes,
+- framing or reframing that affects interpretation,
+- constraint of downstream reasoning paths,
+- decision-informing recommendations that are accepted or relied upon.
+
+If cognition affects **what is asserted** or **why it is justified**, it is in scope.
+
+---
+
+### 4.3 Out-of-Scope Cognitive Activity
+
+The following activities do **not** cross the cognitive influence threshold and SHALL NOT trigger disclosure obligations:
+
+- spelling, grammar, or formatting corrections,
+- stylistic rephrasing that preserves meaning,
+- file conversion or rendering (e.g., Markdown to PDF),
+- deterministic execution of already-approved logic,
+- clerical organization or sorting without interpretive change,
+- private exploration or discarded drafts that do not influence outputs.
+
+Out-of-scope activity MAY involve AI systems without triggering NTS.
+
+---
+
+### 4.4 AI-Specific Threshold Clarification
+
+AI involvement alone does not trigger disclosure.
+
+Disclosure is required only when AI output:
+
+- is incorporated into an artifact,
+- influences reasoning or decisions,
+- or constrains epistemic outcomes.
+
+AI outputs that are generated but not used, adopted, or relied upon do not cross the threshold.
+
+---
+
+### 4.5 Decision Boundary
+
+The cognitive influence threshold is crossed at the moment when a human decision owner:
+
+- accepts AI-generated content,
+- incorporates AI-assisted analysis,
+- relies on AI output to justify a claim,
+- or allows AI influence to shape conclusions.
+
+Human acceptance, not AI generation, determines threshold crossing.
+
+---
+
+### 4.6 Ambiguous Cases
+
+In cases of ambiguity, the following rule SHALL apply:
+
+**When in doubt, disclose.**
+
+Ambiguous influence SHOULD be treated as in scope to preserve epistemic legitimacy.
+
+This rule favors transparency without mandating maximal disclosure.
+
+---
+
+### 4.7 Threshold Enforcement
+
+Threshold determination is a normative requirement of this specification.
+
+NTS defines:
+- when disclosure is required,
+- not how threshold detection is implemented.
+
+Enforcement MAY be manual, procedural, or tool-assisted in downstream systems.
+
+---
+
+This section defines the activation condition for all subsequent NTS disclosure and compliance requirements.
 ## 5. Disclosure Requirements
-Defines mandatory disclosure elements once the threshold is met.
+
+This section defines the **mandatory disclosure elements** required once the cognitive influence threshold defined in Section 4 is crossed.
+
+Disclosure under NTS is **structured, proportional, and minimal**.  
+It exists to make epistemic influence visible without exposing internal cognition or proprietary details.
+
+---
+
+### 5.1 General Disclosure Obligation
+
+When the cognitive influence threshold is crossed, an artifact MUST include an explicit disclosure of AI involvement.
+
+Disclosure SHALL be:
+- truthful,
+- complete with respect to epistemically relevant influence,
+- attributable to a human decision owner,
+- sufficient to permit reconstruction in principle.
+
+Partial or implied disclosure SHALL be treated as non-compliance.
+
+---
+
+### 5.2 AI Involvement Declaration
+
+Each artifact crossing the threshold MUST declare whether AI was involved.
+
+If AI was involved, the artifact MUST specify the **type of involvement** using one or more of the following classifications:
+
+- **None** — no AI influence on epistemic content  
+- **Editorial** — language, clarity, or presentation without meaning change  
+- **Analytical** — analysis, comparison, or evaluation contributing to conclusions  
+- **Generative** — creation of novel content, hypotheses, or structures  
+- **Decision-Critical** — AI output directly informed accepted decisions
+
+These classifications describe *influence*, not capability.
+
+---
+
+### 5.3 Prompt Provenance (Without Content Disclosure)
+
+For each epistemically relevant AI interaction, the artifact MUST disclose:
+
+- the **intent** of the prompt (what was asked),
+- the **role** of the prompt (e.g., drafting, critique, exploration, validation),
+- the **model identity** (name and version, if known),
+- the **linkage** between the AI interaction and the affected artifact or decision.
+
+Raw prompt text is NOT required.
+
+Prompt disclosure MUST be sufficient to characterize the nature of AI cognition without revealing proprietary or sensitive content.
+
+---
+
+### 5.4 Decision Attribution
+
+Artifacts MUST explicitly identify:
+
+- the **human decision owner**, and
+- each **decision point** where AI input was considered.
+
+For each decision point, the artifact MUST declare whether AI input was:
+
+- **advisory** — considered but not relied upon,
+- **comparative** — used to evaluate alternatives,
+- **influential** — materially shaped reasoning,
+- **determinative** — accepted with human approval.
+
+AI systems SHALL NOT be identified as decision owners.
+
+---
+
+### 5.5 Epistemic Weight Classification
+
+Each disclosed instance of AI influence MUST be assigned an **epistemic weight classification**, indicating its relative impact.
+
+Permissible classifications include:
+
+- cosmetic or editorial,
+- conceptual exploration,
+- analytical support,
+- model or structure construction,
+- hypothesis selection,
+- parameter determination.
+
+This classification enables proportional review and prevents both overstatement and minimization of AI influence.
+
+---
+
+### 5.6 Rejection and Non-Adoption Disclosure
+
+Artifacts SHOULD disclose, at a summary level:
+
+- materially considered AI-generated alternatives that were rejected,
+- high-level human rationale for rejection.
+
+Exhaustive logging is NOT required.
+
+This disclosure supports falsifiability, auditability, and post-hoc understanding of epistemic paths not taken.
+
+---
+
+### 5.7 Completeness Requirement
+
+Disclosure SHALL be considered incomplete if:
+
+- any epistemically relevant AI influence is omitted,
+- decision ownership is unclear,
+- AI influence is described vaguely or euphemistically,
+- AI is credited with autonomous reasoning or authority.
+
+Incomplete disclosure constitutes non-compliance.
+
+---
+
+### 5.8 Disclosure Scope Limitation
+
+NTS disclosure requirements do NOT extend to:
+
+- internal model reasoning,
+- chain-of-thought,
+- proprietary system internals,
+- full prompt transcripts,
+- real-time logging of cognition.
+
+Disclosure obligations end at epistemic influence visibility.
+
+---
+
+This section defines the mandatory disclosure elements required for NTS compliance once AI influence becomes epistemically relevant.
 
 ## 6. Attribution & Role Separation Requirements
-Specifies how cognitive roles must be distinguished.
+
+This section defines the mandatory rules governing **attribution of cognition** and the separation of epistemic roles in NTS-compliant artifacts.
+
+Attribution exists to ensure that epistemic responsibility is traceable, human-owned, and not conflated with tool behavior.
+
+---
+
+### 6.1 Attribution Requirement
+
+Any cognition that crosses the cognitive influence threshold MUST be explicitly attributed.
+
+Attribution MUST identify:
+- the **epistemic role** under which the cognition occurred, and
+- the **human decision owner** responsible for accepting its influence.
+
+Attribution SHALL be explicit.  
+Implicit, inferred, or retrospective attribution is not permitted.
+
+---
+
+### 6.2 Epistemic Roles
+
+An **epistemic role** describes the functional capacity in which cognition is performed.
+
+Common roles MAY include:
+- drafting,
+- synthesis,
+- analysis,
+- critique,
+- validation,
+- orchestration.
+
+Roles describe **how cognition was used**, not who or what performed it.
+
+---
+
+### 6.3 Human Authority Invariant
+
+NTS enforces the following invariant:
+
+**Only humans may occupy epistemic authority roles.**
+
+AI systems MAY support cognition but SHALL NOT:
+- be listed as decision owners,
+- be credited with epistemic authority,
+- be described as having agency over claims or conclusions.
+
+Any artifact violating this invariant is non-compliant.
+
+---
+
+### 6.4 Role Separation Requirement
+
+Distinct epistemic roles MUST NOT be conflated.
+
+Specifically:
+- cognition generation,
+- decision acceptance,
+- and validation or approval
+
+SHALL be attributed to distinct roles or explicitly distinct stages.
+
+An artifact MUST make clear:
+- where AI contributed,
+- where humans decided,
+- where validation occurred.
+
+---
+
+### 6.5 Prohibited Role Collapsing
+
+The following practices SHALL be treated as non-compliance:
+
+- attributing reasoning to “the model”,
+- attributing decisions to automated systems,
+- collapsing generation and validation into a single undisclosed step,
+- implying that AI output is self-justifying.
+
+Role collapsing obscures responsibility and violates epistemic transparency.
+
+---
+
+### 6.6 Multi-Stage Cognition
+
+When cognition occurs across multiple stages, attribution MUST reflect:
+
+- the sequence of roles,
+- transitions between AI assistance and human decision-making,
+- points at which influence was accepted or rejected.
+
+Aggregation of stages is permitted only if it does not obscure epistemically significant transitions.
+
+---
+
+### 6.7 Attribution Sufficiency
+
+Attribution SHALL be considered sufficient if a reviewer can determine:
+
+- what role AI played,
+- what role humans played,
+- where responsibility lies for each claim.
+
+If attribution does not allow this determination, it is insufficient.
+
+---
+
+### 6.8 Separation Without Enforcement
+
+NTS defines attribution and role separation **normatively**.
+
+It does not prescribe:
+- workflow structure,
+- tooling,
+- enforcement mechanisms.
+
+Downstream systems MAY enforce these requirements but MUST NOT reinterpret them.
+
+---
+
+This section defines how cognition must be attributed and separated to preserve epistemic accountability under NTS.
 
 ## 7. Provenance & Integrity Requirements
 Defines requirements for preserving cognitive lineage.
