@@ -20,6 +20,8 @@ doi: "10.5281/zenodo.17809676"
 </p>
 
 # Neurotransparency Specification (NTS) v2.0.0  
+
+> **Current status (2026-09-01): Published research specification — not currently implemented.** NTS is preserved as a published disclosure specification. Its compliance model is not currently implemented or enforced by the Waveframe product runtime. [Read the current repository boundary](STATUS.md).
 *Formal normative standard for cognitive traceability in AI–human scientific workflows*
 
 **Waveframe Labs · Aurora Research Initiative (ARI)**  
